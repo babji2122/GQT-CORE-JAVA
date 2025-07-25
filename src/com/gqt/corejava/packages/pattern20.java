@@ -1,23 +1,24 @@
 package com.gqt.corejava.packages;
-
 import java.util.Scanner;
 
-public class patterns18 {
+public class pattern20 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the count");
 		int n=sc.nextInt();
-		int m=n;
-		for(int i=m;i>=1;i--) {
-			for(int j=1;j<=i;j++) { 
-			System.out.print("*");
-			sc.close();
-		}
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print("-");
+			}
+			for(int j=1;j<=n;j++) {
+				System.out.print("@");
+			}
 			System.out.println();
 		}
-
 	}
-
 }
+
+	
+
+
